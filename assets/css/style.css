@@ -3,7 +3,7 @@
 }
 
 header {
-  background-image: url("/project-one/assets/img/starfield.jpg");
+  background-image: url("/assets/img/starfield.jpg");
   background-size: auto;
   height: 200px;
   display: flex;
