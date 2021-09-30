@@ -36,3 +36,8 @@ main {
   margin-top: 5px;
   border-radius: 5px;
 }
+
+.parkInfoCard p {
+  margin: 10px 10px 10px 10px;
+  text-align: justify;
+}

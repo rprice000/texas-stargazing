@@ -13,6 +13,7 @@ const showPark = async function () {
     if (!res.ok) throw new Error(`${data.message} (${res.status})`);
     //Logged the response and data coming back for testing and trouble shooting pruposes.
     console.log(res, data);
+
     //new variable for data sorting and grabbing items from the arrays:
     let { parkInfo } = data.data;
     parkInfo = {
@@ -29,6 +30,7 @@ const showPark = async function () {
 
     <p>${parkInfo.description}</p>
     </div>`;
+
     //Insert parkInfo elements into parkContainer above.
     parkContainer.insertAdjacentHTML("afterbegin", markUp);
   } catch (err) {
