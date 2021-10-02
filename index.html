@@ -52,14 +52,15 @@
           <div class="container">
 
             <div class="columns">
+
               <div class="column">
               </div>
               
-              <div class="column is-8">
+              <div class="column">
                 <div class="card">
                   <div class="card-content">
                     <div class="content">
-                      <h1 class="subtitle has-text-black">Title of Website</h1>
+                      <h1 class="subtitle has-text-centered has-text-black">Title of Website</h1>
                       <p>
                         It is a long established fact that a reader will be distracted by the readable content 
                         of a page when looking at its layout. The point of using Lorem Ipsum is that it has a 
@@ -70,25 +71,8 @@
                         years, sometimes by accident, sometimes on purpose (injected humour and the like).
                       </p>
 
-                      <h4 class="subtitle has-text-centered has-text-black">For More Information Check Out These Links</h4>
-
-                      <div class="columns ">
-                        <div class="column">
-                          <a class="card-footer-item" href="https://www.darksky.org/">Dark Sky Association</a>
-                        </div>
-                        <div class="column">
-                          <a class="card-footer-item" href="https://texanbynature.org/projects/dark-skies-initiative/">Texan By Nature</a>
-                        </div>
-                        <div class="column">
-                          <a class="card-footer-item" href="https://www.nps.gov/index.htm">National Park Service</a>
-                        </div>
-                        <div class="column">
-                          <a class="card-footer-item" href="https://stardate.org/">Star Date</a>
-                        </div>
-                        <div class="column">
-                          <a class="card-footer-item" href="https://mcdonaldobservatory.org/">McDonald Observatory</a>
-                        </div>
-                      </div>
+                      <h4 class="subtitle has-text-black">For More Information Click Here:</h4>
+                      <a class ="button is-primary modal-button" data-target="#modal" id="modalButton">Star Gazing Links</a>
 
                     </div>
                   </div>
@@ -96,17 +80,43 @@
               </div>
               
             </div>
-            
           </div>
         </div>
     </section>
+<!-- MODAL START -->
+    <div id="modal" class = "modal">
+      <div class = "modal-background" id="modalBackground"></div>
+      <div class = "modal-content has-background-white py-10 px-10">
+        
+          <div class="columns ">
+            <div class="column">
+              <a class="card-footer-item" href="https://www.darksky.org/">Dark Sky Association</a>
+            </div>
+            <div class="column">
+              <a class="card-footer-item" href="https://texanbynature.org/projects/dark-skies-initiative/">Texan By Nature</a>
+            </div>
+            <div class="column">
+              <a class="card-footer-item" href="https://www.nps.gov/index.htm">National Park Service</a>
+            </div>
+            <div class="column">
+              <a class="card-footer-item" href="https://stardate.org/">Star Date</a>
+            </div>
+            <div class="column">
+              <a class="card-footer-item" href="https://mcdonaldobservatory.org/">McDonald Observatory</a>
+            </div>
+          </div>
+         
+      </div>
+      <button class = "modal-close is-large" aria-label="close"></button>
+    </div>
+<!-- MODAL END -->
 
 <!-- STATE PARK SECTION START -->
         <!--Big Bend / Big Thicket / Guadalupe Mountains / "WeatherConditions for date Picking" -->
     <section class="section" id="texasStateParks">
       <div class="container">
-        <h1 class="title has-text-centered">Texas State Parks</h1>
-        <div class="columns ">
+        <h1 class="title has-text-centered p-6">Texas State Parks</h1>
+        <div class="columns pb-6">
  <!-- COLUMN ONE CARD -->
           <div class="column" id="column-one">
                 <div class="card" id="card-one">
@@ -219,42 +229,6 @@
     </section>
 <!-- STATE PARK SECTION END -->
 
-<!-- FOR MORE INFORMATION SECTION START -->
-    <section class="section" id="texasStateParks">
-        <div class="container">
-
-            <div class="card">
-                <div class="card-content">
-                    <div class="content">
-                      <h4 class="subtitle has-text-centered">For More Information Check Out These Links</h4>
-          
-                      <div class="columns ">
-                        <div class="column">
-                          <a class="card-footer-item" href="https://www.darksky.org/">Dark Sky Association</a>
-                        </div>
-                        <div class="column">
-                          <a class="card-footer-item" href="https://texanbynature.org/projects/dark-skies-initiative/">Texan By Nature</a>
-                        </div>
-                        <div class="column">
-                          <a class="card-footer-item" href="https://www.nps.gov/index.htm">National Park Service</a>
-                        </div>
-                        <div class="column">
-                          <a class="card-footer-item" href="https://stardate.org/">Star Date</a>
-                        </div>
-                        <div class="column">
-                          <a class="card-footer-item" href="https://mcdonaldobservatory.org/">McDonald Observatory</a>
-                        </div>
-                      </div>
-        
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-<!-- FOR MORE INFORMATION SECTION END -->
-
-
 <!-- CONTACT US SECTION START -->
     <section class="section" id="contactUs">
       <div class="container">
@@ -329,6 +303,6 @@
 <!-- FOOTER END -->
 
 
-  <script src="./assets/javascript/script.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
 </html>
