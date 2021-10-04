@@ -2,131 +2,94 @@
 //////Begin Park code:
 
 //Selected "#parkInfo" ID element in HTML file:
-const parkContainer = document.querySelector("#parkInfoBigBend");
-const parkContainerTwo = document.querySelector("#parkInfoTwo");
-const parkContainerThree = document.querySelector("#parkInfoThree");
+const parkCards = document.querySelector("#parkCards");
 
-//First API call to National Park Service for Big Bend:
-const showParkOne = async function () {
+let getParkInfoAJAX = async function (parkCode) {
   try {
     let res = await fetch(
-      "https://developer.nps.gov/api/v1/parks?parkCode=bibe&api_key=NhMMcVpoxczuVKYo1KbNel9W5AVBX0Miv2OK7vff"
+      "https://developer.nps.gov/api/v1/parks?parkCode=" +
+        parkCode +
+        "&api_key=NhMMcVpoxczuVKYo1KbNel9W5AVBX0Miv2OK7vff"
     );
-    //json response
-    //Switched from const to Let because it needs to be a variable.
-    let data = await res.json();
 
-    if (!res.ok) throw new Error(`${data.message} (${res.status})`);
-    //Logged the response and data coming back for testing and trouble shooting pruposes.
-    console.log(res, data);
+    //Json response from the API call:
+    let resJSON = await res.json();
 
-    //new variable for data sorting and grabbing items from the arrays:
-    let { parkInfoBigBend } = data.data;
-    parkInfoBigBend = {
-      fullname: data.data[0].fullName,
-      image: data.data[0].images[5].url,
-      url: data.data[0].url,
-      address: data.data[0].addresses[1],
-      description: data.data[0].description,
-    };
-    console.log(parkInfoBigBend);
+    if (res.ok === false) {
+      console.log("API not working");
+      throw new Error(`${res.status} (${res.statusText})`);
+    }
 
-    //Rendering the above information:
-    const markUp = `
-    <img src="${parkInfoBigBend.image}"><h2>${parkInfoBigBend.fullname}</h2>
+    //Console log the responses to see data coming back for testing and trounble shooting purposes.
+    console.log(res, resJSON);
 
-    <p>${parkInfoBigBend.description}</p>
-    <p><a href="${parkInfoBigBend.url}">${parkInfoBigBend.url}</p>`;
-
-    //Insert parkInfoBigBend elements into parkContainer above.
-    parkContainer.insertAdjacentHTML("afterbegin", markUp);
+    //Return JSON data:
+    return resJSON;
   } catch (err) {
-    alert(err);
+    // alert (err);
   }
 };
 
-//Second API call to NPS site for Guadalupe Mountains National Park
-const showParkTwo = async function () {
+// Fun part, getting the indivdual park code that will populate each park for the parkCardsEl on the index.html page!:
+async function BuildAParkCard(parkCode) {
   try {
-    const res = await fetch(
-      "https://developer.nps.gov/api/v1/parks?parkCode=gumo&api_key=NhMMcVpoxczuVKYo1KbNel9W5AVBX0Miv2OK7vff"
-    );
-    //json response
-    const data = await res.json();
+    let parkInfo = await getParkInfoAJAX(parkCode);
 
-    if (!res.ok) throw new Error(`${data.message} (${res.status})`);
-    //Logged the response and data coming back for testing and trouble shooting pruposes.
-    console.log(res, data);
+    //Grabs just the parkInfo data that we need:
+    let parkInfoData = parkInfo.data[0];
 
-    //new variable for data sorting and grabbing items from the arrays:
-    let { parkInfoGumo } = data.data;
-    parkInfoGumo = {
-      fullname: data.data[0].fullName,
-      image: data.data[0].images[4].url,
-      url: data.data[0].url,
-      address: data.data[0].addresses[1],
-      description: data.data[0].description,
+    if (parkInfoData === undefined) {
+      throw new Error("We don't have any park data");
+    }
+
+    //Create the object we need for the HTML card data:
+    let parkInfoDataForCard = {
+      parkFullName: parkInfoData.fullName,
+      parkImage: parkInfoData.images[1].url,
+      parkURL: parkInfoData.url,
+      parkAddress: parkInfoData.addresses[1],
+      parkDescription: parkInfoData.description,
     };
-    console.log(parkInfoGumo);
 
-    //Rendering the above information:
-    const markUp2 = `
-    <img src="${parkInfoGumo.image}"><h2>${parkInfoGumo.fullname}</h2>
-
-    <p>${parkInfoGumo.description}</p>
-    <p><a href="${parkInfoGumo.url}">${parkInfoGumo.url}</p>`;
-
-    //Insert parkInfoBigBend elements into parkContainer above.
-    parkContainerTwo.insertAdjacentHTML("afterbegin", markUp2);
-  } catch (err) {
-    alert(err);
-  }
-};
-
-//Third API call to NPS site for Capulin Volcano National Monument
-const showParkThree = async function () {
-  try {
-    const res = await fetch(
-      "https://developer.nps.gov/api/v1/parks?parkCode=cavo&api_key=NhMMcVpoxczuVKYo1KbNel9W5AVBX0Miv2OK7vff"
+    let cardHTML = ParkCardTemplate(
+      parkInfoDataForCard,
+      "Parks for stargazing"
     );
-    //json response
-    const data = await res.json();
 
-    if (!res.ok) throw new Error(`${data.message} (${res.status})`);
-    //Logged the response and data coming back for testing and trouble shooting pruposes.
-    console.log(res, data);
-
-    //new variable for data sorting and grabbing items from the arrays:
-    let { parkInfoCavo } = data.data;
-    parkInfoCavo = {
-      fullname: data.data[0].fullName,
-      image: data.data[0].images[1].url,
-      url: data.data[0].url,
-      address: data.data[0].addresses[0],
-      description: data.data[0].description,
-    };
-    console.log(parkInfoCavo);
-
-    //Rendering the above information to the div elements on the page:
-    const markUp3 = `
-    <img src="${parkInfoCavo.image}"><h2>${parkInfoCavo.fullname}</h2>
-
-    <p>${parkInfoCavo.description}</p>
-    <br>
-    <p><a href="${parkInfoCavo.url}">${parkInfoCavo.url}</p>
-    <p>${parkInfoCavo.address}</p>`;
-
-    //Insert parkInfoBigBend elements into parkContainer above.
-    parkContainerThree.insertAdjacentHTML("afterbegin", markUp3);
+    //Add HTML to the DOM:
+    parkCards.insertAdjacentHTML("beforeend", cardHTML);
   } catch (err) {
-    alert(err);
+    //alert(err)
   }
-};
+}
 
-//Call the above functions to show the parks:
-showParkOne();
-showParkTwo();
-showParkThree();
+//Create the HTML card template to be inserted into the HTML element:
+function ParkCardTemplate(obj, parkID) {
+  let htmlOut = `
+<div id="parkInfo${parkID}" class="parkInfoCard">
+    <div>
+        <img src="${obj.parkImage}">
+    </div>
+    <a href="${obj.parkURL}" class="parkInfoCard__TitleLink">${obj.parkFullName}</a>
+    <p class="parkInfoCard__Description">
+        ${obj.parkDescription}
+    </p>
+    <div class="parkInfoCard__AddressBlock">
+        <div>Mailing Address:</div>
+        <div>${obj.parkFullName}</div>
+        <div>${obj.parkAddress.line1}</div>
+        <div>${obj.parkAddress.city}, ${obj.parkAddress.stateCode} ${obj.parkAddress.postalCode}</div>
+    </div>
+</div>
+`;
+
+  return htmlOut;
+}
+
+//These commands tell it to build the cards on the page:
+BuildAParkCard("bibe");
+
+BuildAParkCard("gumo");
 
 ///End of Park Code
 
