@@ -6,6 +6,22 @@
   background-size: cover;
 }
 
+main {
+  height: 100%;
+  background-color: #001233; /* For browsers that do not support gradients */
+  background-image: linear-gradient(black, #001233,#33415C, #5C677D, #33415C, #001233);
+}
+
+.footer {
+  color: white;
+  background-color: #001233;
+}
+
+#parksTitle, #contactTitle {
+  color:white;
+}
+
+
 
 
 
