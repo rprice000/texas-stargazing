@@ -1,17 +1,311 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TITLE OF WEBSITE</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title></title>
-    
-  </head>
-  <body>
+</head>
+<body>
 
-  <script src="./assets/javascript/script.js"></script>
-  </body>
+    <nav class="navbar is-fixed-top level">
+      <div class="container level-right">
+        <div class="navbar-brand">
+          <div class="navbar-burger burger" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+        </div>
+
+        <div  class="navbar-menu">
+
+          <div class="tabs">
+            <ul>
+              <li>
+                <a href="#home" class="has-text-white">Home</a>
+              </li>
+              <li>
+                <a href="#texasStateParks" class="has-text-white">Texas State Parks</a>
+              </li>
+              <li>
+                <a href="#contactUs" class="has-text-white">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        
+        </div>
+    </nav>
+<main>
+    <section class="hero is-link is-fullheight-with-navbar" id="home">
+      
+        <div class="hero-body">
+          <div class="container">
+
+            <div class="columns">
+
+              <div class="column">
+              </div>
+              
+              <div class="column">
+                <div class="card">
+                  <div class="card-content">
+                    <div class="content">
+                      <h1 class="subtitle has-text-centered has-text-black">Title of Website</h1>
+                      <p>
+                        It is a long established fact that a reader will be distracted by the readable content 
+                        of a page when looking at its layout. The point of using Lorem Ipsum is that it has a 
+                        more-or-less normal distribution of letters, as opposed to using 'Content here, content 
+                        here', making it look like readable English. Many desktop publishing packages and web page 
+                        editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' 
+                        will uncover many web sites still in their infancy. Various versions have evolved over the 
+                        years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                      </p>
+
+                      <h4 class="subtitle has-text-black">For More Information Click Here:</h4>
+                      <a class ="button is-primary modal-button" data-target="#modal" id="modalButton">Star Gazing Links</a>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+    </section>
+
+<!-- MODAL START -->
+    <div id="modal" class = "modal">
+      <div class = "modal-background" id="modalBackground"></div>
+      <div class = "modal-content has-background-white py-10 px-10">
+        
+          <div class="columns ">
+            <div class="column">
+              <a class="card-footer-item" href="https://www.darksky.org/">Dark Sky Association</a>
+            </div>
+            <div class="column">
+              <a class="card-footer-item" href="https://texanbynature.org/projects/dark-skies-initiative/">Texan By Nature</a>
+            </div>
+            <div class="column">
+              <a class="card-footer-item" href="https://www.nps.gov/index.htm">National Park Service</a>
+            </div>
+            <div class="column">
+              <a class="card-footer-item" href="https://stardate.org/">Star Date</a>
+            </div>
+            <div class="column">
+              <a class="card-footer-item" href="https://mcdonaldobservatory.org/">McDonald Observatory</a>
+            </div>
+          </div>
+         
+      </div>
+      <button class = "modal-close is-large" aria-label="close"></button>
+    </div>
+<!-- MODAL END -->
+<main>
+<!-- STATE PARK SECTION START -->
+        <!--Big Bend / Big Thicket / Guadalupe Mountains / "WeatherConditions for date Picking" -->
+    <section class="section" id="texasStateParks">
+      <div class="container">
+        <h1 class="title has-text-centered p-6" id="parksTitle">Texas State Parks</h1>
+        <div class="columns pb-6">
+ <!-- COLUMN ONE CARD -->
+          <div class="column" id="column-one">
+                <div class="card" id="card-one">
+
+                    <div class="card-image" id="card-image-one">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                      </figure>
+                    </div>
+
+                    <div class="card-content" id="card-content-one">
+                      <div class="media" id="media-one">
+                        <div class="media-content" id="media-content-one">
+                          <p class="title is-4" id="title-one">Park Name</p>
+                        </div>
+                      </div>
+                      <div class="content" id="content-one">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris.
+                        <a href="#">Link to Park Site</a>
+                        <br>
+                      </div>
+                    </div>
+
+                </div>
+          </div> 
+<!-- COLUMN TWO CARD -->
+          <div class="column" id="column-two">
+                <div class="card" id="card-two">
+
+                    <div class="card-image" id="card-image-two">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                      </figure>
+                    </div>
+
+                    <div class="card-content" id="card-content-two">
+                      <div class="media" id="media-two">
+                        <div class="media-content" id="media-content-two">
+                          <p class="title is-4" id="title-two">Park Name</p>
+                        </div>
+                      </div>
+                      <div class="content" id="content-two">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris.
+                        <a href="#">Link to Park Site</a>
+                        <br>
+                      </div>
+                    </div>
+                    
+                </div>
+          </div> 
+<!-- COLUMN THREE CARD -->
+          <div class="column" id="column-three">
+                <div class="card" id="card-three">
+
+                    <div class="card-image" id="card-image-three">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                      </figure>
+                    </div>
+
+                    <div class="card-content" id="card-content-three">
+                      <div class="media" id="media-three">
+                        <div class="media-content" id="media-content-three">
+                          <p class="title is-4" id="title-three">Park Name</p>
+                        </div>
+                      </div>
+                      <div class="content" id="content-three">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris.
+                        <a href="#">Link to Park Site</a>
+                        <br>
+                      </div>
+                    </div>
+                    
+                </div>
+          </div>      
+<!-- COLUMN FOUR CARD -->
+          <div class="column" id="column-four">
+                <div class="card" id="card-four">
+
+                    <div class="card-image" id="card-image-four">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                      </figure>
+                    </div>
+
+                    <div class="card-content" id="card-content-four">
+                      <div class="media" id="media-four">
+                        <div class="media-content" id="media-content-four">
+                          <p class="title is-4" id="title-four">Park Name</p>
+                        </div>
+                      </div>
+                      <div class="content" id="content-four">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris.
+                        <a href="#">Link to Park Site</a>
+                        <br>
+                      </div>
+                    </div>
+                    
+                </div>
+          </div>
+
+<!-- COLUMNS DIV END -->
+        </div>
+
+      </div>
+    </section>
+<!-- STATE PARK SECTION END -->
+
+<!-- CONTACT US SECTION START -->
+    <section class="section" id="contactUs">
+      <div class="container">
+        <h1 class="title has-text-centered" id="contactTitle">Contact Us</h1>
+        <div class="columns">
+
+          <div class="column is-three-fifths is-offset-one-fifth">
+
+            <div class="card">
+              <div class="card-content">
+                <div class="content">
+
+                  <div class="field">
+                    <label class="label">Name</label>
+                    <div class="control">
+                      <input class="input" type="text" placeholder="Name">
+                    </div>
+                  </div>
+                  
+                  <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control has-icons-left has-icons-right">
+                      <input class="input" type="email" placeholder="Email input">
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                      </span>
+                    </div>
+                  </div>
+                  
+                  <div class="field">
+                    <label class="label">Subject</label>
+                    <div class="control">
+                      <input class="input" type="text" placeholder="Subject">
+                    </div>
+                  </div>
+                  
+                  <div class="field">
+                    <label class="label">Message</label>
+                    <div class="control">
+                      <textarea class="textarea" placeholder="Message"></textarea>
+                    </div>
+                  </div>
+                  
+                  <div class="field is-grouped">
+                    <div class="control">
+                      <button class="button is-link">Submit</button>
+                    </div>
+                  </div>
+
+
+<!-- CARD DIVS END-->
+                </div>
+              </div>
+            </div>
+
+
+<!-- COLUMN ONE END-->
+          </div> 
+<!-- COLUMNS DIV END-->
+        </div>
+        
+      </div>
+    </section>
+<!-- CONTACT US SECTION END -->
+</main>
+<!-- FOOTER START -->
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>Made By Julie, Jeff, and Reagan</p>
+      </div>
+    </footer>
+<!-- FOOTER END -->
+
+
+  <script src="./assets/js/script.js"></script>
+</body>
 </html>
-
