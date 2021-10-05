@@ -95,7 +95,6 @@ BuildAParkCard("bibe");
 
 BuildAParkCard("gumo");
 
-BuildAParkCard("cavo");
 ///End of Park Code
 
 ////////////////////////////////////////////////////////////////
