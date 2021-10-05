@@ -34,12 +34,20 @@ main {
   background-color: #001233;
 }
 
-/*Park Card styling - inserted by Jeff*/
-#parkCards {
-  display: block;
-} /* or inline-flex
+/*Park Card flex options - inserted by Jeff for testing, remove before production.*/
+/* #parkCards {
+  display: flex;
+} /* or inline-flex */
 
-/*Park Card styling*/
+/*Park Card styling section*/
+
+/*Sets the height to the same for all the cards on the page*/
+.card {
+  height: 800px;
+  max-height: 100%;
+}
+
+/*Set's the internal Park Card styling*/
 .parkInfoCard {
   text-align: center;
   border-radius: 3px;

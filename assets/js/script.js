@@ -34,7 +34,7 @@ let getParkInfoAJAX = async function (parkCode) {
     }
 
     //Console log the responses to see data coming back for testing and trounble shooting purposes.
-    // console.log(res, resJSON);
+    console.log(res, resJSON);
 
     //Return JSON data:
     return resJSON;
@@ -81,34 +81,31 @@ async function BuildAParkCard(parkCode) {
 //Create the HTML card template to be inserted into the HTML element:
 function ParkCardTemplate(obj, parkID) {
   let htmlOut = `
-  
-  
-  <div id="parkInfo${parkID}" class="mb-6">
-  <div class="card" id="card-one">
-<div class="card-image" id="card-image-two">
+  <div id="parkInfo${parkID}" class="column">
+  <div class="card">
+<div class="card-image">
 <figure class="image is-4by3 card-image">
       <img src="${obj.parkImage}" alt="National Park Stargazing Spots">
       </figure>
 </div>
 
-<div class="card-content parkInfoCard" id="card-content-two">
-  <div class="media" id="media-two">
-    <div class="media-content" id="media-content-two">
+<div class="card-content parkInfoCard" id="card-content-one">
+  <div class="media" id="media-one">
+    <div class="media-content" id="media-content-one">
     <p><a href="${obj.parkURL}" class="parkInfoCard__TitleLink title is-4 ">${obj.parkFullName}</a>
     </div>
   </div>
   <div class="content parkInfoCard__Description">
-  <p>${obj.parkDescription}</p>
+  <p>${obj.parkDescription}
+  <br>
+  <a href="${obj.parkURL}">Link to Park Website</a></p>
       <div class="parkInfoCard__AddressBlock">
           <div>Mailing Address:</div>
           <div>${obj.parkFullName}</div>
          <div>${obj.parkAddress.line1}</div>
           <div>${obj.parkAddress.city}, ${obj.parkAddress.stateCode} ${obj.parkAddress.postalCode}</div>
-
      </div>
   </div>
-</div>
-</div>
 </div>`;
 
   return htmlOut;
@@ -119,6 +116,8 @@ function ParkCardTemplate(obj, parkID) {
 BuildAParkCard("bibe");
 
 BuildAParkCard("gumo");
+
+BuildAParkCard("bith");
 
 ///End of Park Code
 
