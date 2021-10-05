@@ -1,5 +1,3 @@
-
-
 #home {
   background-image: url("../images/background-image-7.jpg");
   background-repeat: no-repeat;
@@ -9,7 +7,14 @@
 main {
   height: 100%;
   background-color: #001233; /* For browsers that do not support gradients */
-  background-image: linear-gradient(black, #001233,#33415C, #5C677D, #33415C, #001233);
+  background-image: linear-gradient(
+    black,
+    #001233,
+    #33415c,
+    #5c677d,
+    #33415c,
+    #001233
+  );
 }
 
 .footer {
@@ -17,19 +22,122 @@ main {
   background-color: #001233;
 }
 
-#parksTitle, #contactTitle {
-  color:white;
+#parksTitle,
+#contactTitle {
+  color: white;
 }
 
 .navbar,
 .navbar-burger,
 .burger,
-.navbar-menu
- {
-  background-color: #001233
+.navbar-menu {
+  background-color: #001233;
 }
 
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  background: #f0f2f4;
+}
+.navbar.is-white {
+  background: #f0f2f4;
+}
+.navbar-brand .brand-text {
+  font-size: 1.11rem;
+  font-weight: bold;
+}
+.hero-body {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Plum_trees_Kitano_Tenmangu.jpg/1200px-Plum_trees_Kitano_Tenmangu.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+.articles {
+  margin: 5rem 0;
+  margin-top: -200px;
+}
+.articles .content p {
+  line-height: 1.9;
+  margin: 15px 0;
+}
+.author-image {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  margin-left: -30px;
+  border: 3px solid #ccc;
+  border-radius: 50%;
+}
+.media-center {
+  display: block;
+  margin-bottom: 1rem;
+}
+.media-content {
+  margin-top: 3rem;
+}
+.article,
+.promo-block {
+  margin-top: 6rem;
+}
+div.column.is-8:first-child {
+  padding-top: 0;
+  margin-top: 0;
+}
+.article-title {
+  font-size: 2rem;
+  font-weight: lighter;
+  line-height: 2;
+}
+.article-subtitle {
+  color: #909aa0;
+  margin-bottom: 3rem;
+}
+.article-body {
+  line-height: 1.4;
+  margin: 0 6rem;
+}
+.promo-block .container {
+  margin: 1rem 5rem;
+}
 
+/*Park Card styling - inserted by Jeff*/
+#parkCards {
+  display: flex; /* or inline-flex */
+}
 
+/*Park Card styling*/
+.parkInfoCard {
+  text-align: center;
+  width: 400px;
+  border: 3px solid black;
+  border-radius: 3px;
+  margin-left: 25px;
+}
 
+.parkInfoCard img {
+  width: 300px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
 
+.parkInfoCard__Description {
+  margin: 10px 10px 10px 10px;
+  text-align: justify;
+}
+
+.parkInfoCard__TitleLink {
+  font-size: 26px;
+}
+
+.parkInfoCard__AddressBlock {
+  font-size: 12px;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+}
