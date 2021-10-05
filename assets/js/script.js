@@ -21,7 +21,7 @@ let getParkInfoAJAX = async function (parkCode) {
     }
 
     //Console log the responses to see data coming back for testing and trounble shooting purposes.
-    console.log(res, resJSON);
+    // console.log(res, resJSON);
 
     //Return JSON data:
     return resJSON;
@@ -49,6 +49,8 @@ async function BuildAParkCard(parkCode) {
       parkURL: parkInfoData.url,
       parkAddress: parkInfoData.addresses[1],
       parkDescription: parkInfoData.description,
+      parkLat: parkInfoData.latitude,
+      parkLong: parkInfoData.longitude,
     };
 
     let cardHTML = ParkCardTemplate(
@@ -79,6 +81,7 @@ function ParkCardTemplate(obj, parkID) {
         <div>${obj.parkFullName}</div>
         <div>${obj.parkAddress.line1}</div>
         <div>${obj.parkAddress.city}, ${obj.parkAddress.stateCode} ${obj.parkAddress.postalCode}</div>
+
     </div>
 </div>
 `;
@@ -87,10 +90,12 @@ function ParkCardTemplate(obj, parkID) {
 }
 
 //These commands tell it to build the cards on the page:
+
 BuildAParkCard("bibe");
 
 BuildAParkCard("gumo");
 
+BuildAParkCard("cavo");
 ///End of Park Code
 
 ////////////////////////////////////////////////////////////////
