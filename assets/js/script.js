@@ -58,7 +58,7 @@ async function BuildAParkCard(parkCode) {
     //Create the object we need for the HTML card data:
     let parkInfoDataForCard = {
       parkFullName: parkInfoData.fullName,
-      parkImage: parkInfoData.images[1].url,
+      parkImage: parkInfoData.images[5].url,
       parkURL: parkInfoData.url,
       parkAddress: parkInfoData.addresses[1],
       parkDescription: parkInfoData.description,
@@ -81,11 +81,11 @@ async function BuildAParkCard(parkCode) {
 //Create the HTML card template to be inserted into the HTML element:
 function ParkCardTemplate(obj, parkID) {
   let htmlOut = `
-<div id="parkInfo${parkID}" class="parkInfoCard">
+<div id="parkInfo${parkID}" class="parkInfoCard card">
     <div>
-        <img src="${obj.parkImage}">
+        <img src="${obj.parkImage}" class="card-image">
     </div>
-    <a href="${obj.parkURL}" class="parkInfoCard__TitleLink">${obj.parkFullName}</a>
+    <a href="${obj.parkURL}" class="parkInfoCard__TitleLink title is-4">${obj.parkFullName}</a>
     <p class="parkInfoCard__Description">
         ${obj.parkDescription}
     </p>
@@ -94,6 +94,7 @@ function ParkCardTemplate(obj, parkID) {
         <div>${obj.parkFullName}</div>
         <div>${obj.parkAddress.line1}</div>
         <div>${obj.parkAddress.city}, ${obj.parkAddress.stateCode} ${obj.parkAddress.postalCode}</div>
+        <br>
 
     </div>
 </div>

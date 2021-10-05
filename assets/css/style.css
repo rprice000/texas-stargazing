@@ -42,16 +42,16 @@ main {
 /*Park Card styling*/
 .parkInfoCard {
   text-align: center;
-  width: 400px;
-  border: 3px solid black;
+  width: 350px;
   border-radius: 3px;
   margin-left: 25px;
 }
 
 .parkInfoCard img {
-  width: 300px;
-  margin-top: 5px;
-  border-radius: 5px;
+  justify-content: center;
+  width: 350px;
+  margin-top: 0px;
+  border-radius: 2px 2px 0px 0px;
 }
 
 .parkInfoCard__Description {
