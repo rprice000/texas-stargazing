@@ -58,7 +58,7 @@ async function BuildAParkCard(parkCode) {
     //Create the object we need for the HTML card data:
     let parkInfoDataForCard = {
       parkFullName: parkInfoData.fullName,
-      parkImage: parkInfoData.images[5].url,
+      parkImage: parkInfoData.images[4].url,
       parkURL: parkInfoData.url,
       parkAddress: parkInfoData.addresses[1],
       parkDescription: parkInfoData.description,
@@ -81,24 +81,35 @@ async function BuildAParkCard(parkCode) {
 //Create the HTML card template to be inserted into the HTML element:
 function ParkCardTemplate(obj, parkID) {
   let htmlOut = `
-<div id="parkInfo${parkID}" class="parkInfoCard card">
-    <div>
-        <img src="${obj.parkImage}" class="card-image">
-    </div>
-    <a href="${obj.parkURL}" class="parkInfoCard__TitleLink title is-4">${obj.parkFullName}</a>
-    <p class="parkInfoCard__Description">
-        ${obj.parkDescription}
-    </p>
-    <div class="parkInfoCard__AddressBlock">
-        <div>Mailing Address:</div>
-        <div>${obj.parkFullName}</div>
-        <div>${obj.parkAddress.line1}</div>
-        <div>${obj.parkAddress.city}, ${obj.parkAddress.stateCode} ${obj.parkAddress.postalCode}</div>
-        <br>
-
-    </div>
+  
+  
+  <div id="parkInfo${parkID}" class="mb-6">
+  <div class="card" id="card-one">
+<div class="card-image" id="card-image-two">
+<figure class="image is-4by3 card-image">
+      <img src="${obj.parkImage}" alt="National Park Stargazing Spots">
+      </figure>
 </div>
-`;
+
+<div class="card-content parkInfoCard" id="card-content-two">
+  <div class="media" id="media-two">
+    <div class="media-content" id="media-content-two">
+    <p><a href="${obj.parkURL}" class="parkInfoCard__TitleLink title is-4 ">${obj.parkFullName}</a>
+    </div>
+  </div>
+  <div class="content parkInfoCard__Description">
+  <p>${obj.parkDescription}</p>
+      <div class="parkInfoCard__AddressBlock">
+          <div>Mailing Address:</div>
+          <div>${obj.parkFullName}</div>
+         <div>${obj.parkAddress.line1}</div>
+          <div>${obj.parkAddress.city}, ${obj.parkAddress.stateCode} ${obj.parkAddress.postalCode}</div>
+
+     </div>
+  </div>
+</div>
+</div>
+</div>`;
 
   return htmlOut;
 }

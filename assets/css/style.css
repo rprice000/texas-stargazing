@@ -36,27 +36,24 @@ main {
 
 /*Park Card styling - inserted by Jeff*/
 #parkCards {
-  display: flex; /* or inline-flex */
-}
+  display: block;
+} /* or inline-flex
 
 /*Park Card styling*/
 .parkInfoCard {
   text-align: center;
-  width: 350px;
   border-radius: 3px;
-  margin-left: 25px;
 }
 
 .parkInfoCard img {
   justify-content: center;
-  width: 350px;
   margin-top: 0px;
   border-radius: 2px 2px 0px 0px;
 }
 
 .parkInfoCard__Description {
   margin: 10px 10px 10px 10px;
-  text-align: justify;
+  text-align: left;
 }
 
 .parkInfoCard__TitleLink {

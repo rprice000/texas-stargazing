@@ -118,56 +118,86 @@
         <div class="container">
           <h1 class="title has-text-centered p-6" id="parksTitle">Texas State Parks</h1>
           <div class="columns pb-6">
-            <!-- API CARD COLUMNS -->
-            <div class="column" id="column-one">
-              <div id="parkCards"></div>
 
+            <!-- API CARD COLUMNS -->
+            <div class="column mb-2" id="parkCards">
             </div>
+
+
             <!-- COLUMN TWO CARD -->
             <div class="column" id="column-two">
               <div class="card" id="card-two">
-
                 <div class="card-image" id="card-image-two">
-                  <figure class="image is-4by3">
-                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                  <figure class="image is-4by3 card-image">
+                    <img src="assets/images/enchantedRock.jpg" alt="Evening at Enchanted Rock">
                   </figure>
                 </div>
 
-                <div class="card-content" id="card-content-two">
+                <div class="card-content parkInfoCard" id="card-content-two">
                   <div class="media" id="media-two">
-                    <div class="media-content" id="media-content-two">
-                      <p class="title is-4" id="title-two">Park Name</p>
+                    <div class="media-content" id="media-content-four">
+                      <p class="title is-4 parkInfoCard__Title" id="title-two">Enchanted Rock State Natural Area</p>
                     </div>
                   </div>
-                  <div class="content" id="content-two">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus nec iaculis mauris.
-                    <a href="#">Link to Park Site</a>
-                    <br>
+                  <div class="content parkInfoCard__Description" id="content-two">
+                    <p>Enchanted Rock State Natural Area spans the border between Gillespie County and Llano
+                      County, south of the Llano River and some 24 km north of Fredericksburg, Texas. Popular
+                      activities at the park include star gazing, caving, hiking, primitive backpack camping, rock
+                      climbing and picnicking.
+                      It is a designated Dark Sky preserve as of 2014.
+                      Enchanted Rock has hosted star parties for park visitors since 2011.
+                      <br>
+                      <a href="https://tpwd.texas.gov/state-parks/enchanted-rock" target="_blank">Link to Park
+                        Site</a>
+                    </p>
+                    <p class="parkInfoCard__AddressBlock">
+                      Mailing address:
+                      <br>
+                      16710 Ranch Rd. 965
+                      <br>
+                      Fredericksburg, TX 78624
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
+
+
             <!-- COLUMN THREE CARD -->
             <div class="column" id="column-three">
               <div class="card" id="card-three">
 
                 <div class="card-image" id="card-image-three">
                   <figure class="image is-4by3">
-                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                    <img src="/assets/images/llanoStatePark.jpg" alt="South Llano River State Park at Night">
                   </figure>
                 </div>
 
-                <div class="card-content" id="card-content-three">
+                <div class="card-content parkInfoCard" id="card-content-three">
                   <div class="media" id="media-three">
                     <div class="media-content" id="media-content-three">
-                      <p class="title is-4" id="title-three">Park Name</p>
+                      <p class="title is-4 parkInfoCard__Title" id="title-three">South Llano River State Park</p>
                     </div>
                   </div>
-                  <div class="content" id="content-three">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus nec iaculis mauris.
-                    <a href="#">Link to Park Site</a>
+                  <div class="content parkInfoCard__Description" id="content-three">
+                    <p>
+                      South Llano River State Park is the third Texas state park to be designated as an International
+                      Dark Sky Park, joining Copper Breaks State Park located in the Texas Panhandle and Enchanted
+                      Rock
+                      State Park in the Hill Country.
+
+                      Located five miles from the nearest town, the South Llano River State Park ranks as a “3” on the
+                      Bortle Scale which ranks skies from 1 to 9, with one being the darkest skies and nine being the
+                      least dark.
+                      <br>
+                      <a href="#">Link to Park Site</a>
+                    </p>
+                    <p class="parkInfoCard__AddressBlock">
+                      Mailing address:
+                      <br>1927 Park Road 73
+                      <br>
+                      Junction, TX 76849
+                    </p>
                     <br>
                   </div>
                 </div>
@@ -177,27 +207,40 @@
             <!-- COLUMN FOUR CARD -->
             <div class="column" id="column-four">
               <div class="card" id="card-four">
-
                 <div class="card-image" id="card-image-four">
-                  <figure class="image is-4by3">
-                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                  <figure class="image is-4by3 card-image">
+                    <img src="assets/images/copperBreaks.jpg" alt="Evening sky at Copper Breaks State Park">
                   </figure>
                 </div>
 
-                <div class="card-content" id="card-content-four">
+                <div class="card-content parkInfoCard" id="card-content-four">
                   <div class="media" id="media-four">
                     <div class="media-content" id="media-content-four">
-                      <p class="title is-4" id="title-four">Park Name</p>
+                      <p class="title is-4 parkInfoCard__Title" id="title-four">Copper Breaks State Park </p>
                     </div>
                   </div>
-                  <div class="content" id="content-four">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Phasellus nec iaculis mauris.
-                    <a href="#">Link to Park Site</a>
-                    <br>
+                  <div class="content parkInfoCard__Description" id="content-four">
+                    <p>Copper Breaks State Park, located in northern Texas some 21km south of the town of Quanah,
+                      contains two small lakes and 16 km of trails. “Breaks” refers to the fractures and faults that
+                      define the limited waterways of the park. The land comprising the park was historically held
+                      by the Comanche and Kiowa Native American tribes and were purchased from a private landowner in
+                      1970. Since 1996 the park has capitalized on its superb celestial assets by hosting Star Walks
+                      and
+                      other astronomy programs.
+                      <br>
+                      <a href="https://tpwd.texas.gov/state-parks/copper-breaks/cb_stargazing" target="_blank">Link to
+                        Park
+                        Site</a>
+                    </p>
+                    <p class="parkInfoCard__AddressBlock">
+                      Mailing address:
+                      <br>
+                      777 State Hwy Park Rd 62,
+                      <br>
+                      Quanah, TX 79252
+                    </p>
                   </div>
                 </div>
-
               </div>
             </div>
 
