@@ -21,6 +21,14 @@ main {
   color:white;
 }
 
+.navbar,
+.navbar-burger,
+.burger,
+.navbar-menu
+ {
+  background-color: #001233
+}
+
 
 
 
