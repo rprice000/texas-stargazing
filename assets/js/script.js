@@ -150,12 +150,12 @@ function retrieveNotes() {
   //Places the HTML on the page:
   document.getElementById("displayNotes").innerHTML = `
 
-  <p><h4>Date: ${records.date}  </h4>
+  <p class="is-medium"><h4><b>Date:</b> ${records.date}</h4>
   <br>
-    <h4>ParkName: ${records.park}</h4>
+    <h4><b>Park Name:</b> ${records.park}</h4>
     <br>
-    <h4>Your Notes: </h4>
-    ${records.yourNotes}</p>
+    <h4><b>Your Notes:</b>
+    ${records.yourNotes}</h4></p>
     `;
 }
 

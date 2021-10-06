@@ -268,45 +268,52 @@
                   <div class="content">
                     <div id="formDiv">
                       <form id="notesForm">
-                        <h1>Your Trip Notes</h1>
-                        <h4>Feel free to write down your notes for your upcoming trip below</h4>
+                        <h4>Feel free to write down your notes for your upcoming trip below. Only one note per park,
+                          please.</h4>
 
                         <label for="date">Date</label>
                         <br>
-                        <input type="text" id="Date" class="notesStyle" placeholder="Date" required><br>
+                        <input type="text" id="Date" class="input is-medium is-rounded" placeholder="Date" required><br>
 
                         <label for="key">Park Name</label>
                         <br>
-                        <input type="text" id="ParkName" class="notesStyle" placeholder="Park Name" required><br>
+                        <input type="text" id="ParkName" class="input is-medium is-rounded" placeholder="Park Name"
+                          required><br>
 
                         <label for="YourNotes">Notes</label>
                         <br>
 
-                        <input type="textarea" id="YourNotes" class="notesEntry" placeholder="Your Notes Here" required
-                          autofocus><br>
+                        <textarea type="text" id="YourNotes" class="textarea is-medium is-rounded"
+                          placeholder="Your Notes Here" rows="8" required></textarea><br>
 
-                        <button type="submit">Store your Notes</button>
+                        <button type="submit" class="button is-info is-rounded is-fullwidth is-medium">Store your
+                          Notes</button>
 
                       </form>
                       <br>
 
                       <label for="retrieveNote">Enter The Park Name to retrieve your notes</label>
                       <br>
-                      <input type="text" id="retrieveParkName" placeholder="Retrieve your parkname Here" required><br>
+                      <input type="text" id="retrieveParkName" class="input is-medium is-rounded is-medium"
+                        placeholder="Retrieve your Notes Here" required><br>
 
-                      <button id="retrieveButton">Retrieve your Notes</button>
+                      <button id="retrieveButton" class="button is-info is-rounded is-fullwidth is-medium">Retrieve your
+                        Notes</button>
                       <br>
                       <label for="removeparkName">Enter Park Name to delete that Note</label>
                       <br>
-                      <input type="text" id="removeparkName" placeholder="Remove Park Name" required><br>
-                      <button id="removeButton">Remove record</button>
+                      <input type="text" id="removeparkName" class="input is-medium is-rounded"
+                        placeholder="Remove Park Name" required><br>
+                      <button id="removeButton" class="button is-info is-rounded is-medium is-fullwidth">Remove
+                        Note</button>
                       <br>
-                      <button id="clearButton">Clear all your Notes</button>
+                      <button id="clearButton" class="button is-info is-rounded is-fullwidth is-medium">Clear all your
+                        Notes</button>
                     </div>
+                    <br>
                     <div>
-                      <h4>Your notes will display here:</h4>
+                      <h4 class="center">Your note will display below:</h4>
                     </div>
-                    <div id="retrieveNotes"></div>
                     <div id="displayNotes"></div>
                   </div>
                 </div>

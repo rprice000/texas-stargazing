@@ -34,11 +34,6 @@ main {
   background-color: #001233;
 }
 
-/*Park Card flex options - inserted by Jeff for testing, remove before production.*/
-/* #parkCards {
-  display: flex;
-} /* or inline-flex */
-
 /*Park Card styling section*/
 
 /*Sets the height to the same for all the cards on the page*/
@@ -76,29 +71,12 @@ main {
 }
 
 /*Notes section styling*/
-label,
-input {
+label {
   font-size: 20px;
-}
-
-input {
-  max-width: 100%;
-  width: 300px;
-}
-
-.notesEntry {
-  max-width: 100%;
-  width: 600px;
-  height: 400px;
-  border-radius: 6px;
 }
 
 button {
-  background-color: rgb(10, 0, 148);
-  font-size: 20px;
-  color: white;
-  width: 200px;
-  height: 40px;
-  border-radius: 3px;
-  margin-top: 3px;
+  margin: 5px 0px 5px 0px;
 }
+
+/*End of notes styling*/
