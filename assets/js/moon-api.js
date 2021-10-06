@@ -21,6 +21,8 @@ fetch(url)
     let moonphase = data.days[0].moonphase;
     let currentSunrise = data.days[0].sunrise;
     let currentSunset = data.days[0].sunset;
+
+    console.log (typeof moonphase);
     // reformat date
 
     const longEnUSFormatter = new Intl.DateTimeFormat("en-US", {
@@ -32,33 +34,32 @@ fetch(url)
     document.getElementById("date").innerHTML =
       longEnUSFormatter.format(todaysDate);
 
-    // document.getElementById("location").innerHTML =
-    //   "Big Bend National Park";
+    // document.getElementById("location").innerHTML ="Big Bend National Park";
 
     // Cases to select corresponding image
 
-    if ((moonphase == "0.5")) {
+    if (moonphase === 0.5) {
       document.getElementById("moon-pix").innerHTML =
         "<img src='assets/images/moon-phases-master/img/ful.jpg' />";
-    } else if ((moonphase === "0")) {
+    } else if (moonphase === 0) {
       document.getElementById("moon-pix").innerHTML =
         "<img src='assets/images/moon-phases-master/img/new.jpg />";
-    } else if (moonphase >= 0.49 || moonphase <= 0.75) {
+    } else if (moonphase >= 0.49 && moonphase <= 0.75) {
       document.getElementById("moon-pix").innerHTML =
         "<img src='assets/images/moon-phases-master/img/wng.jpg' />";
-    } else if (moonphase >= 0.25 || moonphase <= 0.49) {
+    } else if (moonphase >= 0.25 && moonphase <= 0.49) {
       document.getElementById("moon-pix").innerHTML =
         "<img src='assets/images/moon-phases-master/img/wxg.jpg' />";
-    } else if (moonphase >= 0.75 || moonphase <= 0.99) {
+    } else if (moonphase >= 0.75 && moonphase <= 0.99) {
       document.getElementById("moon-pix").innerHTML =
         "<img src='assets/images/moon-phases-master/img/wnc.jpg' />";
-    } else if (moonphase >= 0.01 || moonphase <= 0.24) {
+    } else if (moonphase >= 0.01 && moonphase <= 0.24) {
       document.getElementById("moon-pix").innerHTML =
         "<img src='assets/images/moon-phases-master/img/wxc.jpg' />";
-    } else if ((moonphase == 0.25)) {
+    } else if (moonphase === 0.25) {
       document.getElementById("moon-pix").innerHTML =
         "<img src='assets/images/moon-phases-master/img/fqt.jpg' />";
-    } else if ((moonphase == 0.75)) {
+    } else if (moonphase === 0.75) {
       document.getElementById("moon-pix").innerHTML =
         "<img src='assets/images/moon-phases-master/img/tqt.jpg' />";
     }
