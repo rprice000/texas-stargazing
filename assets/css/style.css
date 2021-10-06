@@ -34,7 +34,9 @@ main {
   background-color: #001233;
 }
 
-
+#modalButton {
+  background-color: #0466C8;
+}
 /*Park Card styling section*/
 
 /*Sets the height to the same for all the cards on the page*/
