@@ -4,7 +4,16 @@ d = Date.now();
 
 const n = new Date(d) - 18000000;
 
+// URL for Big Bend - hard coded
 const url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/1%20Panther%20Junction%20Big%20Bend%20National%20Park%2C%20TX%2079834/today?unitGroup=us&key=GV95TV8AQBAEB4TB8G9UMEQEM&include=days&elements=datetime,moonphase,sunrise,sunset`;
+// additional addresses for future expansion
+const urlAll = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/`+"Address"+`/today?unitGroup=us&key=GV95TV8AQBAEB4TB8G9UMEQEM&include=days&elements=datetime,moonphase,sunrise,sunset`;
+const bigThicketAddy = "FM%20%20420%20Kountze%20TX%2077625";
+const guadalupeMtnsAddy = "400%20Pine%20Canyon%20SaltFlat%20TX%2079847";
+const enchantedRockAddy = "16710%20Ranch%20Rd.%20965%20Fredericksburg%20TX%2078624";
+const southLlanoAddy = "1927%20Park%20Road%2073%20Junction%20TX%2076849";
+const copperBreaksAddy = "777%20State%20Hwy%20Park%20Rd%2062%20Quanah%20TX%2079252";
+
 
 // fetch our info from the API
 fetch(url)
