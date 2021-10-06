@@ -35,3 +35,49 @@ main {
 }
 
 
+/*Park Card styling section*/
+
+/*Sets the height to the same for all the cards on the page*/
+.card {
+  max-height: 100%;
+}
+
+/*Set's the internal Park Card styling*/
+.parkInfoCard {
+  text-align: center;
+  border-radius: 3px;
+}
+
+.parkInfoCard img {
+  justify-content: center;
+  margin-top: 0px;
+  border-radius: 2px 2px 0px 0px;
+}
+
+.parkInfoCard__Description {
+  margin: 10px 10px 10px 10px;
+  text-align: left;
+}
+
+.parkInfoCard__TitleLink {
+  font-size: 26px;
+}
+
+.parkInfoCard__AddressBlock {
+  font-size: 12px;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+}
+
+/*Notes section styling*/
+label {
+  font-size: 20px;
+}
+
+button {
+  margin: 5px 0px 5px 0px;
+}
+
+/*End of notes styling*/
