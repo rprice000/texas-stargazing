@@ -256,9 +256,9 @@
       <!-- STATE PARK SECTION END -->
 
       <!-- CONTACT US SECTION START -->
-      <section class="section" id="contactUs">
+      <section class="section" id="TripNotes">
         <div class="container">
-          <h1 class="title has-text-centered" id="contactTitle">Contact Us</h1>
+          <h1 class="title has-text-centered has-text-white">Trip Notes</h1>
           <div class="columns">
 
             <div class="column is-three-fifths is-offset-one-fifth">
@@ -266,55 +266,61 @@
               <div class="card">
                 <div class="card-content">
                   <div class="content">
+                    <div id="formDiv">
+                      <form id="notesForm">
+                        <h1>Your Trip Notes</h1>
+                        <h4>Feel free to write down your notes for your upcoming trip below</h4>
 
-                    <div class="field">
-                      <label class="label">Name</label>
-                      <div class="control">
-                        <input class="input" type="text" placeholder="Name">
-                      </div>
+                        <label for="date">Date</label>
+                        <br>
+                        <input type="text" id="Date" class="notesStyle" placeholder="Date" required><br>
+
+                        <label for="key">Park Name</label>
+                        <br>
+                        <input type="text" id="ParkName" class="notesStyle" placeholder="Park Name" required><br>
+
+                        <label for="YourNotes">Notes</label>
+                        <br>
+
+                        <input type="textarea" id="YourNotes" class="notesEntry" placeholder="Your Notes Here" required
+                          autofocus><br>
+
+                        <button type="submit">Store your Notes</button>
+
+                      </form>
+                      <br>
+
+                      <label for="retrieveNote">Enter The Park Name to retrieve your notes</label>
+                      <br>
+                      <input type="text" id="retrieveParkName" placeholder="Retrieve your parkname Here" required><br>
+
+                      <button id="retrieveButton">Retrieve your Notes</button>
+                      <br>
+                      <label for="removeparkName">Enter Park Name to delete that Note</label>
+                      <br>
+                      <input type="text" id="removeparkName" placeholder="Remove Park Name" required><br>
+                      <button id="removeButton">Remove record</button>
+                      <br>
+                      <button id="clearButton">Clear all your Notes</button>
                     </div>
-
-                    <div class="field">
-                      <label class="label">Email</label>
-                      <div class="control has-icons-left has-icons-right">
-                        <input class="input" type="email" placeholder="Email input">
-                        <span class="icon is-small is-left">
-                          <i class="fas fa-envelope"></i>
-                        </span>
-                      </div>
+                    <div>
+                      <h4>Your notes will display here:</h4>
                     </div>
-
-                    <div class="field">
-                      <label class="label">Subject</label>
-                      <div class="control">
-                        <input class="input" type="text" placeholder="Subject">
-                      </div>
-                    </div>
-
-                    <div class="field">
-                      <label class="label">Message</label>
-                      <div class="control">
-                        <textarea class="textarea" placeholder="Message"></textarea>
-                      </div>
-                    </div>
-
-                    <div class="field is-grouped">
-                      <div class="control">
-                        <button class="button is-link">Submit</button>
-                      </div>
-                    </div>
-
-
-                    <!-- CARD DIVS END-->
+                    <div id="retrieveNotes"></div>
+                    <div id="displayNotes"></div>
                   </div>
                 </div>
+
+                <!-- CARD DIVS END-->
               </div>
-
-
-              <!-- COLUMN ONE END-->
             </div>
-            <!-- COLUMNS DIV END-->
           </div>
+
+
+          <!-- COLUMN ONE END-->
+        </div>
+        <!-- COLUMNS DIV END-->
+        </div>
         </div>
         </div>
       </section>
