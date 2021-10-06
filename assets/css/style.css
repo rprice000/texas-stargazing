@@ -34,44 +34,4 @@ main {
   background-color: #001233;
 }
 
-/*Park Card flex options - inserted by Jeff for testing, remove before production.*/
-/* #parkCards {
-  display: flex;
-} /* or inline-flex */
 
-/*Park Card styling section*/
-
-/*Sets the height to the same for all the cards on the page*/
-.card {
-  height: 800px;
-  max-height: 100%;
-}
-
-/*Set's the internal Park Card styling*/
-.parkInfoCard {
-  text-align: center;
-  border-radius: 3px;
-}
-
-.parkInfoCard img {
-  justify-content: center;
-  margin-top: 0px;
-  border-radius: 2px 2px 0px 0px;
-}
-
-.parkInfoCard__Description {
-  margin: 10px 10px 10px 10px;
-  text-align: left;
-}
-
-.parkInfoCard__TitleLink {
-  font-size: 26px;
-}
-
-.parkInfoCard__AddressBlock {
-  font-size: 12px;
-  text-align: left;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 50px;
-}
