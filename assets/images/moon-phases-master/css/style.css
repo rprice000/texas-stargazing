@@ -1,0 +1,37 @@
+body {
+    font-family: Arial;
+    max-width: 1024px;
+    text-align: center;
+    margin: 2% auto;
+    background-color: black;
+    color: white;
+}
+
+#date {
+    font-size: xx-large;
+}
+
+#pic {
+    margin: 2%;
+}
+
+img {
+    width: 98%;
+}
+
+.footer {
+    font-size:x-small;
+}
+
+a:link, 
+a:visited, 
+a:active {
+    color: white;
+}
+
+@media (min-width: 500px) {
+
+    img {
+        width: 300px;
+    }
+}
