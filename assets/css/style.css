@@ -35,25 +35,15 @@ main {
 }
 
 #modalButton {
-  background-color: #0466C8;
+  background-color: #0466c8;
 }
 
-#moonPhaseSection{
-   color:white;
-   text-align: center;
-   justify-content: center;
-   font-size: xx-large;
+#moonPhaseSection {
+  color: white;
+  text-align: center;
+  justify-content: center;
+  font-size: xx-large;
 }
-
-
-#moon-pix{
-    height: 500px;
-    width: 500px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 
 #nasaLink {
   color: white;
