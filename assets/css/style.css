@@ -37,6 +37,33 @@ main {
 #modalButton {
   background-color: #0466C8;
 }
+
+#moonPhaseSection{
+   color:white;
+   text-align: center;
+   justify-content: center;
+   font-size: xx-large;
+}
+
+
+#moon-pix{
+    height: 500px;
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#nasaLink {
+  color: white;
+  text-decoration: underline;
+}
+
+
+
+
+
 /*Park Card styling section*/
 
 /*Sets the height to the same for all the cards on the page*/

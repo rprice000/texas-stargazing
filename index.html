@@ -36,7 +36,10 @@
               <a href="#texasStateParks" class="has-text-white">Texas Parks</a>
             </li>
             <li>
-              <a href="#contactUs" class="has-text-white">Contact Us</a>
+              <a href="#moonPhaseSection" class="has-text-white">Moon Phase</a>
+            </li>
+            <li>
+              <a href="#TripNotes" class="has-text-white">Trip Notes</a>
             </li>
           </ul>
         </div>
@@ -73,7 +76,7 @@
                     </p>
 
                     <h4 class="subtitle has-text-black">For More Information Click Here:</h4>
-                    <a class="button is-primary modal-button" data-target="#modal" id="modalButton">Star Gazing
+                    <a class="button is-primary modal-button" data-target="#modal" id="modalButton">Stargazing
                       Links</a>
 
                   </div>
@@ -93,20 +96,20 @@
 
         <div class="columns ">
           <div class="column">
-            <a class="card-footer-item" href="https://www.darksky.org/">Dark Sky Association</a>
+            <a class="card-footer-item" href="https://www.darksky.org/" target="_blank">Dark Sky Association</a>
           </div>
           <div class="column">
-            <a class="card-footer-item" href="https://texanbynature.org/projects/dark-skies-initiative/">Texan By
+            <a class="card-footer-item" href="https://texanbynature.org/projects/dark-skies-initiative/" target="_blank">Texan By
               Nature</a>
           </div>
           <div class="column">
-            <a class="card-footer-item" href="https://www.nps.gov/index.htm">National Park Service</a>
+            <a class="card-footer-item" href="https://www.nps.gov/index.htm" target="_blank">National Park Service</a>
           </div>
           <div class="column">
-            <a class="card-footer-item" href="https://stardate.org/">Star Date</a>
+            <a class="card-footer-item" href="https://stardate.org/" target="_blank">Star Date</a>
           </div>
           <div class="column">
-            <a class="card-footer-item" href="https://mcdonaldobservatory.org/">McDonald Observatory</a>
+            <a class="card-footer-item" href="https://mcdonaldobservatory.org/" target="_blank">McDonald Observatory</a>
           </div>
         </div>
 
@@ -119,7 +122,7 @@
       <!--Big Bend / Big Thicket / Guadalupe Mountains / "WeatherConditions for date Picking" -->
       <section class="section" id="texasStateParks">
         <div class="container">
-          <h1 class="title has-text-centered p-6" id="parksTitle">Texas State Parks</h1>
+          <h1 class="title has-text-centered p-6" id="parksTitle">Texas Stargazing Parks</h1>
 
 
           <!-- API CARD COLUMNS -->
@@ -197,7 +200,7 @@
                       Bortle Scale which ranks skies from 1 to 9, with one being the darkest skies and nine being the
                       least dark.
                       <br>
-                      <a href="#">Link to Park Site</a>
+                      <a href="https://tpwd.texas.gov/state-parks/south-llano-river" target="_blank">Link to Park Site</a>
                     </p>
                     <p class="parkInfoCard__AddressBlock">
                       Mailing address:
@@ -258,7 +261,29 @@
       </section>
       <!-- STATE PARK SECTION END -->
 
-      <!-- CONTACT US SECTION START -->
+      <!-- MOON PHASE SECTION START -->
+
+
+      <section class="section" id="moonPhaseSection">
+
+        <h1 class="title has-text-centered p-6 has-text-white" id="moonPhase">Current Moon Phase</h1>
+          
+        <div id="date"></div> <br/>
+        <div id="addy"></div><br/>
+         <div id="moon-pix"></div><br/>
+        <div id="sunrise"></div><br />
+        <div id="sunset"></div>
+        <br />
+        <p>Images courtesy of <a id="nasaLink" href="https://svs.gsfc.nasa.gov/Gallery/moonphase.html" target="_blank">NASA</a></p>
+     
+       
+      
+
+
+      </section>
+      <!-- MOON PHASE SECTION END -->
+
+      <!-- Trip Notes SECTION START -->
       <section class="section" id="TripNotes">
         <div class="container">
           <h1 class="title has-text-centered has-text-white">Trip Notes</h1>
@@ -343,7 +368,7 @@
       </div>
     </footer>
     <!-- FOOTER END -->
-
+    <script src="./assets/js/moon-api.js" async defer></script>
     <script src="./assets/js/script.js"></script>
 </body>
 

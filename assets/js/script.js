@@ -97,7 +97,7 @@ function ParkCardTemplate(obj, parkID) {
   <div class="content parkInfoCard__Description">
   <p>${obj.parkDescription}
   <br>
-  <a href="${obj.parkURL}">Link to Park Website</a></p>
+  <a href="${obj.parkURL}" target="_blank">Link to Park Website</a></p>
       <div class="parkInfoCard__AddressBlock">
           <div>Mailing Address:</div>
           <div>${obj.parkFullName}</div>
