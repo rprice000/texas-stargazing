@@ -60,6 +60,19 @@ main {
   text-decoration: underline;
 }
 
+.modal-card-head{
+  background-color: #001233;
+}
+
+.modal-card-title{
+  color: white;
+}
+
+.modal-card-body {
+  text-decoration: underline;
+  background-color: #5c677d;
+}
+
 
 
 

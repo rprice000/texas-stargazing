@@ -9,7 +9,8 @@ modalButton.addEventListener("click", () => {
   modal.classList.add("is-active");
 });
 
-modalBackground.addEventListener("click", () => {
+
+modalClose.addEventListener("click", () => {
   modal.classList.remove("is-active");
 });
 

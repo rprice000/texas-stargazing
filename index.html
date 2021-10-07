@@ -88,35 +88,38 @@
         </div>
       </div>
     </section>
-
-    <!-- MODAL START -->
-    <div id="modal" class="modal">
+<!-- MODAL START -->
+    <div class="modal">
       <div class="modal-background" id="modalBackground"></div>
-      <div class="modal-content has-background-white py-10 px-10">
-
-        <div class="columns ">
-          <div class="column">
-            <a class="card-footer-item" href="https://www.darksky.org/" target="_blank">Dark Sky Association</a>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Links to Dark Skys and Stargazing Information</p>
+          <button class="delete" aria-label="close" id="modalClose"></button>
+        </header>
+        <section class="modal-card-body">
+          <div class="columns ">
+            <div class="column">
+              <a class="card-footer-item has-text-white" href="https://www.darksky.org/" target="_blank">Dark Sky Association</a>
+            </div>
+            <div class="column">
+              <a class="card-footer-item has-text-white" href="https://texanbynature.org/projects/dark-skies-initiative/" target="_blank">Texan By
+                Nature</a>
+            </div>
+            <div class="column">
+              <a class="card-footer-item has-text-white" href="https://www.nps.gov/index.htm" target="_blank">National Park Service</a>
+            </div>
+            <div class="column">
+              <a class="card-footer-item has-text-white" href="https://stardate.org/" target="_blank">Star Date</a>
+            </div>
+            <div class="column">
+              <a class="card-footer-item has-text-white" href="https://mcdonaldobservatory.org/" target="_blank">McDonald Observatory</a>
+            </div>
           </div>
-          <div class="column">
-            <a class="card-footer-item" href="https://texanbynature.org/projects/dark-skies-initiative/" target="_blank">Texan By
-              Nature</a>
-          </div>
-          <div class="column">
-            <a class="card-footer-item" href="https://www.nps.gov/index.htm" target="_blank">National Park Service</a>
-          </div>
-          <div class="column">
-            <a class="card-footer-item" href="https://stardate.org/" target="_blank">Star Date</a>
-          </div>
-          <div class="column">
-            <a class="card-footer-item" href="https://mcdonaldobservatory.org/" target="_blank">McDonald Observatory</a>
-          </div>
-        </div>
-
+        </section>
       </div>
-      <button class="modal-close is-large" aria-label="close"></button>
     </div>
-    <!-- MODAL END -->
+<!-- MODAL END -->
+
     <main>
       <!-- STATE PARK SECTION START -->
       <!--Big Bend / Big Thicket / Guadalupe Mountains / "WeatherConditions for date Picking" -->
@@ -265,21 +268,14 @@
 
 
       <section class="section" id="moonPhaseSection">
-
         <h1 class="title has-text-centered p-6 has-text-white" id="moonPhase">Current Moon Phase</h1>
-          
-        <div id="date"></div> <br/>
-        <div id="addy"></div><br/>
-         <div id="moon-pix"></div><br/>
-        <div id="sunrise"></div><br />
-        <div id="sunset"></div>
-        <br />
-        <p>Images courtesy of <a id="nasaLink" href="https://svs.gsfc.nasa.gov/Gallery/moonphase.html" target="_blank">NASA</a></p>
-     
-       
-      
-
-
+            <div id="date"></div> <br/>
+            <div id="addy"></div><br/>
+            <div id="moon-pix"></div><br/>
+            <div id="sunrise"></div><br />
+            <div id="sunset"></div>
+            <br />
+            <p>Images courtesy of <a id="nasaLink" href="https://svs.gsfc.nasa.gov/Gallery/moonphase.html" target="_blank">NASA</a></p>
       </section>
       <!-- MOON PHASE SECTION END -->
 
