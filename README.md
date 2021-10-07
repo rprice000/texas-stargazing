@@ -22,8 +22,12 @@ For three billion years, life on Earth existed in a rhythm of light and dark tha
 ## Purpose
 By creating this website, we hope to help promote awareness of the dangers of light pollution by providing the user a fun and interactive webiste designed to engage different aspects of stargazing. After all, stargazing is no fun with bright artificial lights shining down on you!
 
-A website that allows the user to enter desired travel dates to determine optimal stargazing conditions - as defined by sunrise/sunset (length of dark sky) and phase of the moon.
-The use can also select from a menu of various Dark Sky certified US National Parks and get more information on the individual parks. Parks are ceritfied by the Internaional Dark-Sky Association.
+Links to various stargazing oraganizations are also provided in the navigation.
+
+A website that allows the user to determine check current stargazing conditions - as defined by sunrise/sunset (length of dark sky) and phase of the moon.
+The use can view various Dark Sky certified Texas National and State Parks which are dark sky certifies and get more information on the individual parks. Parks are ceritfied by the Internaional Dark-Sky Association.
+
+User can enter their own personal notes on each park and save to local storage for furture retrieval.
 
 ## Built With
 * HTML
@@ -33,10 +37,14 @@ The use can also select from a menu of various Dark Sky certified US National Pa
 * Bulma
 
 ## Website
-https://rprice000.github.io/project-one/
+https://rprice000.github.io/texas-stargazing/
 
 ## Screen Shot
-![Big Bend WPA-style stargazing poster for inspiration](https://images.squarespace-cdn.com/content/v1/54d3ac40e4b029a6058be94a/1617804147350-OX4KJJU6AY7AX683MZUJ/BigBend2021.jpg?format=750w)
+![image](https://user-images.githubusercontent.com/88805050/136309511-9151e571-d50e-4d88-9b28-7f231a7cc089.png)
+![image](https://user-images.githubusercontent.com/88805050/136309547-f60ad49a-c09b-470d-b4ad-3e88bef119ce.png)
+![image](https://user-images.githubusercontent.com/88805050/136309584-1babb85d-85a6-4eec-bf57-a3d7697f8fe6.png)
+![image](https://user-images.githubusercontent.com/88805050/136309616-9ab8e2dd-29b3-4794-83c6-6664d3e48b67.png)
+
 
  ## Contribution
   Made by Jeff Anderson-Lester, Reagan Price and Julie Summers
