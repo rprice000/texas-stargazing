@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Dark Sky Stargazer's Tool 
 
 
@@ -17,6 +16,7 @@ For three billion years, life on Earth existed in a rhythm of light and dark tha
   - Harming human health
     Like most life on Earth, humans adhere to a circadian rhythm — our biological clock — a sleep-wake pattern governed by the day-night cycle. Artificial light at night can disrupt that cycle.
     Our bodies produce the hormone melatonin in response to circadian rhythm. Melatonin helps keep us healthy. It has antioxidant properties, induces sleep, boosts the immune system, lowers cholesterol, and helps the functioning of the thyroid, pancreas, ovaries, testes and adrenal glands. Nighttime exposure to artificial light suppresses melatonin production.
+      * Information courtesy of darksky.org
 
 
 ## Purpose
